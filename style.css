@@ -1,10 +1,80 @@
-body {
-    font-family: Arial, sans-serif;
+/* CSS */
+/* Reset some default styles */
+* {
     margin: 0;
     padding: 0;
-    text-align: center;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
 }
-h1 {
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
     color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden; /* Clear floats */
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 15px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 20px 0;
+}
+
+.section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+}
+
+.service, .event {
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
