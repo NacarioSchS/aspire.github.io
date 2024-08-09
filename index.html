@@ -3,39 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aspire Website</title>
+    <title>Aspire | Modern Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">Aspire</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<nav>
-    <div class="logo">Aspire</div>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-
-<div class="hero">
-    <div>
-        <h1>Welcome to Aspire</h1>
-        <p>Empowering your digital journey.</p>
-        <a href="#learn-more" class="cta-button">Learn More</a>
-    </div>
-</div>
-
-<section class="cards">
-    <div class="card">
-        <img src="https://source.unsplash.com/random/300x200" alt="Card Image">
-        <div class="card-content">
-            <h3>Card Title</h3>
-            <p>Card description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to Aspire</h1>
+            <p>Empowering your journey with modern solutions.</p>
+            <button class="cta-button">Get Started</button>
         </div>
-    </div>
-    <!-- Repeat card structure for more cards -->
-</section>
+    </section>
 
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>We are dedicated to providing top-notch services to help you reach your goals.</p>
+    </section>
+
+    <section id="services" class="services-section">
+        <h2>Our Services</h2>
+        <div class="service-card">
+            <h3>Service 1</h3>
+            <p>Description of Service 1.</p>
+        </div>
+        <div class="service-card">
+            <h3>Service 2</h3>
+            <p>Description of Service 2.</p>
+        </div>
+        <div class="service-card">
+            <h3>Service 3</h3>
+            <p>Description of Service 3.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Aspire. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
