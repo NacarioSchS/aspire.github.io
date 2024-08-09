@@ -1,80 +1,120 @@
-/* CSS */
-/* Reset some default styles */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* Basic styles */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden; /* Clear floats */
-}
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 15px 0;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 24px;
-}
-
-header nav ul {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Navigation Bar */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    display: flex;
     list-style: none;
-    text-align: center;
-}
-
-header nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-header nav ul li a {
-    color: #fff;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
     text-decoration: none;
-    padding: 10px 15px;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ff5733;
+  }
+  
+  /* Hero Section */
+  .hero {
+    height: 100vh;
+    background: url('https://source.unsplash.com/random/1600x900') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .hero .cta-button {
+    background-color: #ff5733;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
     transition: background-color 0.3s ease;
-}
-
-header nav ul li a:hover {
-    background-color: #555;
-}
-
-main {
-    padding: 20px 0;
-}
-
-.section {
-    padding: 40px 0;
-    text-align: center;
-}
-
-.section h2 {
-    margin-bottom: 20px;
-}
-
-.service, .event {
-    margin-bottom: 20px;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
+  }
+  
+  .hero .cta-button:hover {
+    background-color: #c13b24;
+  }
+  
+  /* Card Layout */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card img {
     width: 100%;
-}
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .card-content p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
