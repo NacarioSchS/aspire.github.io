@@ -1,150 +1,83 @@
-/* styles.css */
-
-body {
+/* CSS */
+/* Reset some default styles */
+* {
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
 }
 
-/* Header and Navbar */
-.header {
-    background-color: #333;
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden; /* Clear floats */
+}
+
+header {
+    background: #333;
     color: #fff;
-    padding: 10px 20px;
+    padding: 15px 0;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
 }
 
-.nav-links {
+header nav ul {
     list-style: none;
-    display: flex;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+h1 {
+    color: #333;
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
 }
 
-.nav-links li {
-    margin: 0 10px;
-}
-
-.nav-links a {
+header nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1rem;
-}
-
-/* Hero Section */
-.hero-section {
-    background: linear-gradient(to right, #4a90e2, #50a7c2);
-    color: #fff;
-    padding: 100px 20px;
-    text-align: center;
-}
-
-.hero-content h1 {
-    font-size: 2.5rem;
-}
-
-.cta-button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.cta-button:hover {
-    transform: scale(1.05);
-}
-
-/* About Section */
-.about-section {
-    padding: 50px 20px;
-    background-color: #fff;
-    text-align: center;
-}
-
-.about-section h2 {
-    font-size: 2rem;
-}
-
-/* Services Section */
-.services-section {
-    padding: 50px 20px;
-    background-color: #e2e2e2;
-    text-align: center;
-}
-
-.service-card {
-    background-color: #fff;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.service-card:hover {
-    transform: translateY(-10px);
-}
-
-/* Contact Section */
-.contact-section {
-    padding: 50px 20px;
-    background-color: #fff;
-    text-align: center;
-}
-
-.contact-section form {
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-section input,
-.contact-section textarea {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.contact-section button {
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+    padding: 10px 15px;
     transition: background-color 0.3s ease;
 }
 
-.contact-section button:hover {
+header nav ul li a:hover {
     background-color: #555;
 }
-
-/* Footer */
-.footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
+main {
+    padding: 20px 0;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .nav-links {
-        flex-direction: column;
-    }
+.section {
+    padding: 40px 0;
+    text-align: center;
+}
 
-    .hero-content h1 {
-        font-size: 2rem;
-    }
+.section h2 {
+    margin-bottom: 20px;
+}
 
-    .service-card {
-        margin: 10px 0;
-    }
+.service, .event {
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
